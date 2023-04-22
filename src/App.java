@@ -1,5 +1,9 @@
+import models.Student;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Student st = new Student();
+        st.input();
+        st.displayDetail();
     }
 }
