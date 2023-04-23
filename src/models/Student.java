@@ -27,7 +27,6 @@ public class Student {
         this.address = address;
         this.school = school;
         this.mediumScore = mediumScore;
-        setClassification(mediumScore);
     }
 
     public String getId() {
@@ -84,19 +83,18 @@ public class Student {
 
     public void setMediumScore(float mediumScore) {
         this.mediumScore = mediumScore;
-        setClassification(mediumScore);
     }
 
     public String getClassification() {
         return classification;
     }
 
-    private void setClassification(float mediumScore) {
-        if (mediumScore >= 4 && mediumScore < 6) {
+    private void setClassification(float poin) {
+        if (poin >= 4 && poin < 6) {
             classification = "weak";
-        } else if (mediumScore >= 6 && mediumScore < 8) {
+        } else if (poin >= 6 && poin < 8) {
             classification = "medium";
-        } else if (mediumScore >= 8 && mediumScore <= 10) {
+        } else if (poin >= 8 && poin <= 10) {
             classification = "good";
         } else {
             classification = "unknown";
