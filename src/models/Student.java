@@ -105,25 +105,25 @@ public class Student {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Nhập vào ID : ");
-        id = sc.next();
+        this.id = sc.next();
 
         System.out.println("Nhập vào Name : ");
-        name = sc.next();
+        this.name = sc.next();
 
         System.out.println("Nhập vào Age : ");
-        age = sc.nextInt();
+        this.age = sc.nextInt();
 
         System.out.println("Nhập vào Khoá học : ");
-        course = sc.next();
+        this.course = sc.next();
 
         System.out.println("Nhập vào Địa chỉ : ");
-        address = sc.next();
+        this.address = sc.next();
 
         System.out.println("Nhập vào Tên trường : ");
-        school = sc.next();
+        this.school = sc.next();
 
         System.out.println("Nhập vào Điểm trung bình : ");
-        mediumScore = sc.nextFloat();
+        this.mediumScore = sc.nextFloat();
         setClassification(mediumScore);
     }
 
